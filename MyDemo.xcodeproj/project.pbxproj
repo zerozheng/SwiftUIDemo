@@ -16,6 +16,7 @@
 		DA22623325F9B9F7007EDCF3 /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA22623225F9B9F7007EDCF3 /* ListController.swift */; };
 		DA22623625F9BA94007EDCF3 /* ListPresent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA22623525F9BA94007EDCF3 /* ListPresent.swift */; };
 		DA52DDF925FA076E0040E997 /* ViewPresent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA52DDF825FA076E0040E997 /* ViewPresent.swift */; };
+		DAB2A58725FB42F700BED4A6 /* CountWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB2A58625FB42F700BED4A6 /* CountWrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		DA22623225F9B9F7007EDCF3 /* ListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
 		DA22623525F9BA94007EDCF3 /* ListPresent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresent.swift; sourceTree = "<group>"; };
 		DA52DDF825FA076E0040E997 /* ViewPresent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPresent.swift; sourceTree = "<group>"; };
+		DAB2A58625FB42F700BED4A6 /* CountWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountWrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				DA2261F825F9ABC6007EDCF3 /* SceneDelegate.swift */,
 				DA2261FA25F9ABC6007EDCF3 /* ViewController.swift */,
 				DA22623225F9B9F7007EDCF3 /* ListController.swift */,
+				DAB2A58625FB42F700BED4A6 /* CountWrapper.swift */,
 				DA2261FF25F9ABC8007EDCF3 /* Assets.xcassets */,
 				DA22620125F9ABC8007EDCF3 /* LaunchScreen.storyboard */,
 				DA22620425F9ABC8007EDCF3 /* Info.plist */,
@@ -160,6 +163,7 @@
 				DA22620F25F9B08F007EDCF3 /* Detail.swift in Sources */,
 				DA2261F925F9ABC6007EDCF3 /* SceneDelegate.swift in Sources */,
 				DA22623625F9BA94007EDCF3 /* ListPresent.swift in Sources */,
+				DAB2A58725FB42F700BED4A6 /* CountWrapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

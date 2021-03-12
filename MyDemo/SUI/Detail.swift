@@ -8,16 +8,23 @@
 import SwiftUI
 
 struct Detail: View {
+    var value: Binding<Int>
+    @ObservedObject var countWrapper: CountWrapper
+    
+    init(_ countWrapper: CountWrapper) {
+        self.countWrapper = countWrapper
+        value = Binding(get: {
+            countWrapper.count
+        }, set: { _ in
+            countWrapper.updateCount()
+        })
+    }
+    
     var body: some View {
         VStack {
-            NavigationLink(
-                destination: ListPresent().navigationTitle("列表"),
-                label: {
-                    /*@START_MENU_TOKEN@*/Text("Navigate")/*@END_MENU_TOKEN@*/
-                })
-            ViewPresent()
+            Text("value:\(value.wrappedValue)")
+            ViewPresent(value: value)
                 .frame(width: 100, height: 50)
-            NavigationLink("我是swiftUI界面，点击我跳转到storyBoard界面", destination: ListPresent())
         }
         .navigationBarTitle("详情页")
     }
@@ -25,6 +32,6 @@ struct Detail: View {
 
 struct Detail_Previews: PreviewProvider {
     static var previews: some View {
-        Detail()
+        Detail(CountWrapper(count: 6))
     }
 }
